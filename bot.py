@@ -176,11 +176,11 @@ def error(bot, update, error):
 
 updater = Updater(token=TOKEN)
 dp = updater.dispatcher
-dp.addHandler(CommandHandler('tex', convert, pass_args=True))
-dp.addHandler(CommandHandler('photo', as_photo))
-dp.addHandler(CommandHandler('file', as_file))
-dp.addHandler(CommandHandler('help', help))
-dp.addHandler(CommandHandler('start', help))
+dp.add_handler(CommandHandler('tex', convert, pass_args=True))
+dp.add_handler(CommandHandler('photo', as_photo))
+dp.add_handler(CommandHandler('file', as_file))
+dp.add_handler(CommandHandler('help', help))
+dp.add_handler(CommandHandler('start', help))
 updater.start_polling(timeout=30)
 updater.idle()
 
