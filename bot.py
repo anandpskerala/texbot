@@ -174,13 +174,13 @@ def error(bot, update, error):
     logger.exception(error)
 
 
-u = Updater(token=TOKEN)
-dp = u.dispatcher
+updater = Updater(token=TOKEN)
+dp = updater.dispatcher
 dp.addHandler(CommandHandler('tex', convert, pass_args=True))
 dp.addHandler(CommandHandler('photo', as_photo))
 dp.addHandler(CommandHandler('file', as_file))
 dp.addHandler(CommandHandler('help', help))
 dp.addHandler(CommandHandler('start', help))
-u.start_polling(timeout=30)
-u.idle()
+updater.start_polling(timeout=30)
+updater.idle()
 
