@@ -13,7 +13,7 @@ import shutil
 import python3pickledb as pickledb
 
 # Configuration
-TOKEN = 'T'
+TOKEN = '879263624:AAH1jrCEv06fT8PRKRflFu5ZcpzfkhX_-bU'
 
 MAX_CONVERSIONS = 5  # The maximum of concurrent conversations
 WORK_LOC = '/tmp/texbot'  # The location where the latex is converted
